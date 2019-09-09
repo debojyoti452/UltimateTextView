@@ -1,5 +1,5 @@
 # UltimateTextView
-[![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19) [![](https://www.jitpack.io/v/debojyoti452/UltimateTextView.svg)](https://www.jitpack.io/#debojyoti452/UltimateTextView)
+[![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19) [![](https://www.jitpack.io/v/debojyoti452/UltimateTextView.svg)](https://www.jitpack.io/#debojyoti452/UltimateTextView) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9b87c18857bb49a3822841893215e4f0)](https://www.codacy.com/manual/debojyoti452/UltimateTextView?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=debojyoti452/UltimateTextView&amp;utm_campaign=Badge_Grade)
 
 ## Version
 #### Tag = 1.0

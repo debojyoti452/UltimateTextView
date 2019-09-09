@@ -37,7 +37,6 @@ class HelperForAutoFit private constructor(private val mBackBoneTextView: BackBo
     private var mIsAutofitting: Boolean = false
     private var mListeners: ArrayList<OnTextSizeChangeListener>? = null
     private val mTextWatcher = AutofitTextWatcher()
-    private val mOnLayoutChangeListener = AutofitOnLayoutChangeListener()
 
     var textSize: Float
         get() = mTextSize
@@ -162,13 +161,9 @@ class HelperForAutoFit private constructor(private val mBackBoneTextView: BackBo
 
             if (enabled) {
                 mBackBoneTextView.addTextChangedListener(mTextWatcher)
-                mBackBoneTextView.addOnLayoutChangeListener(mOnLayoutChangeListener)
-
                 AutoFitFunc()
             } else {
                 mBackBoneTextView.removeTextChangedListener(mTextWatcher)
-                mBackBoneTextView.removeOnLayoutChangeListener(mOnLayoutChangeListener)
-
                 mBackBoneTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mTextSize)
             }
         }
@@ -199,13 +194,12 @@ class HelperForAutoFit private constructor(private val mBackBoneTextView: BackBo
 
     private fun AutoFitFunc() {
         val oldTextSize = mBackBoneTextView.textSize
-        val textSize: Float
+        val textSize: Float = mBackBoneTextView.textSize
 
         mIsAutofitting = true
         AutoFitFunc(mBackBoneTextView, mPaint, mMinTextSize, mMaxTextSize, mMaxLines, mPrecision)
         mIsAutofitting = false
 
-        textSize = mBackBoneTextView.textSize
         if (textSize != oldTextSize) {
             sendTextSizeChange(textSize, oldTextSize)
         }
@@ -246,15 +240,6 @@ class HelperForAutoFit private constructor(private val mBackBoneTextView: BackBo
 
         override fun afterTextChanged(editable: Editable) {
             // do nothing
-        }
-    }
-
-    private inner class AutofitOnLayoutChangeListener : View.OnLayoutChangeListener {
-        override fun onLayoutChange(
-            view: View, left: Int, top: Int, right: Int, bottom: Int,
-            oldLeft: Int, oldTop: Int, oldRight: Int, oldBottom: Int
-        ) {
-            AutoFitFunc()
         }
     }
 

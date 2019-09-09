@@ -1,7 +1,8 @@
 # UltimateTextView
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19) [![](https://www.jitpack.io/v/debojyoti452/UltimateTextView.svg)](https://www.jitpack.io/#debojyoti452/UltimateTextView)
 
-### Tag = 1.0
+## Version
+#### Tag = 1.0
 ## Sample
 <p align="center"> 
 <img src="images/screencapture-1568048103006.gif">

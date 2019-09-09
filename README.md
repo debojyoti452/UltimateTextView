@@ -1,4 +1,5 @@
 # UltimateTextView
+[![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
 ### Tag = [![](https://www.jitpack.io/v/debojyoti452/UltimateTextView.svg)](https://www.jitpack.io/#debojyoti452/UltimateTextView)
 ## Sample
 <p align="center"> 
@@ -44,3 +45,13 @@ dependencies {
             app:UTVMinTextSize="12sp"
             app:UTVSingleLine="false" />
 ```
+
+## Future Development
+* Fade In Animation
+* Bold, Italic, Strike Features
+
+## Contribution
+Feel free to pull request.
+
+Find this library useful? ❤️
+Support it by joining stargazers for this repository. ⭐️

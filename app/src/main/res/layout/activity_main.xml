@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <com.dev452.ultimatetextview.UltimateTextView
+            android:id="@+id/textViewDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:maxLines="3"
+            app:UTVAutoFitEnabled="true"
+            app:UTVFonts="@string/exo_semibold"
+            app:UTVMinTextSize="12sp"
+            app:UTVSingleLine="false" />
+
+
+    <EditText
+            android:id="@+id/editTextDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

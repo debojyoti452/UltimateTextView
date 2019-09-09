@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UltimateTextViewSample</string>
+
+    //fonts
+    <string name="exo_regular">fonts/exo_regular.ttf</string>
+    <string name="exo_semibold">fonts/exo_semibold.ttf</string>
+    <string name="alex_brush_fonts">fonts/alexbrush_italic.ttf</string>
+</resources>

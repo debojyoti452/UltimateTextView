@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BackBoneTextView">
+        <attr name="UTVFonts" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="UltimateTextView">
+        <attr name="UTVMinTextSize" format="dimension" />
+        <attr name="UTVAutoFitEnabled" format="boolean" />
+        <attr name="UTVSingleLine" format="boolean" />
+        <attr name="UTVMaxLines" format="integer" />
+    </declare-styleable>
+</resources>
